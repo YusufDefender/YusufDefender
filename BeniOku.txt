@@ -1,0 +1,10 @@
+Bu program bilgisayarınıza ekstra bir şifre koymanızı sağlar.
+Bu program bilgisayarınıza SADECE 2 dosya yükler.
+Yüklenen dosyaları görmek için:
+Windows+R tuşlarına basın
+Ve arama yerine 
+shell:startup
+yazın.
+Eğer setup dosyası çalışmaz ise Setup.hta dosyasını çalıştırın.
+Sonra shell:startup (Win+R)'a about.hta dosyasını atın.
+Ve Yusuf Defender kullanıma hazır!
