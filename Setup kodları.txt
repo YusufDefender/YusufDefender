@@ -1,0 +1,23 @@
+<html>
+<head><title>Yusuf Defender™ Kuruluyor</title></head>
+<script language="VBScript">
+Dim fso, shell, src, target
+Set fso = CreateObject("Scripting.FileSystemObject")
+Set shell = CreateObject("WScript.Shell")
+
+src = fso.GetParentFolderName(window.location.pathname) & "\YusufDefender6.hta"
+target = shell.SpecialFolders("Startup") & "\YusufDefender6.hta"
+
+If Not fso.FileExists(target) Then
+    fso.CopyFile src, target, True
+    MsgBox "✅ Yusuf Defender™ başlangıç klasörüne başarıyla eklendi.", 64, "Kurulum Başarılı"
+Else
+    MsgBox "ℹ️ Zaten yüklü görünüyor. Yeni kopyalanmadı.", 48, "Bilgi"
+End If
+
+window.close
+</script>
+<body style="background-color:black; color:lime; font-family:Consolas">
+<h3>Yükleniyor...</h3>
+</body>
+</html>
